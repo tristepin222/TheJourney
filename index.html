@@ -1,0 +1,673 @@
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="css/css.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<main class="viewport" style="background-image: url('images/look-up-at-the-sky-day-1.webp');">
+
+  <!-- Main part-->
+
+  <header class="site-navbar" role="banner">
+    <div class="container">
+    <div class="row align-items-center">
+    <div class="col-11 col-xl-2">
+    <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">The Journey</a></h1>
+    </div>
+    <div class="col-12 col-md-10 d-none d-xl-block">
+    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+    <li class="active"><a href="#" class="products3"><span>Our Boats</span></a></li>
+    <li class="has-children">
+    <a href="about.html"><span>Dropdown</span></a>
+    <ul class="dropdown arrow-top">
+    <li><a href="#">Menu One</a></li>
+    <li><a href="#">Menu Two</a></li>
+    <li><a href="#">Menu Three</a></li>
+    <li class="has-children">
+    <a href="#">Dropdown</a>
+    <ul class="dropdown">
+    <li><a href="#">Menu One</a></li>
+    <li><a href="#">Menu Two</a></li>
+    <li><a href="#">Menu Three</a></li>
+    <li><a href="#">Menu Four</a></li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    <li><a href="#" class="products2"><span>Listings</span></a></li>
+    <li><a href="about.html"><span>About</span></a></li>
+    <li><a href="#" class="menu2"><span>Register/Login</span></a></li>
+    <li><a href="contact.html"><span>Contact</span></a></li>
+    </ul>
+    </nav>
+    </div>
+    <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+    </div>
+    </div>
+    
+    </header>
+
+
+  <div class="loader" style="visibility: hidden;">
+    <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+        stroke-width="0.9120000000000001"></g>
+      <g id="SVGRepo_iconCarrier">
+        <path id="boat"
+          d="M4 17.5L3 12L12 9L21 12L20 17.5M5 11.3333V7C5 5.89543 5.89543 5 7 5H17C18.1046 5 19 5.89543 19 7V11.3333M10 5V3C10 2.44772 10.4477 2 11 2H13C13.5523 2 14 2.44772 14 3V5M2 21C3 22 6 22 8 20C10 22 14 22 16 20C18 22 21 22 22 21"
+          stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path  id="wave" d="M21,11c-2.25,0-2.25,2-4.5,2s-2.25-2-4.5-2-2.25,2-4.5,2S5.25,11,3,11" fill="none"
+          stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="visibility: hidden;"></path>
+        <path id="wave-2" data-name="primary" d="M3,5C5.25,5,5.25,7,7.5,7S9.75,5,12,5s2.26,2,4.51,2S18.75,5,21,5"
+          fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="visibility: hidden;"></path>
+        <path id="wave-3" data-name="primary" d="M21,17c-2.25,0-2.25,2-4.5,2s-2.25-2-4.5-2-2.25,2-4.5,2S5.25,17,3,17"
+          fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="visibility: hidden;"></path>
+          <path id="anchor"
+          d="M11 3C11 2.44772 11.4477 2 12 2C12.5523 2 13 2.44772 13 3C13 3.55228 12.5523 4 12 4C11.4477 4 11 3.55228 11 3ZM13 5.82929C14.1652 5.41746 15 4.30622 15 3C15 1.34315 13.6569 0 12 0C10.3431 0 9 1.34315 9 3C9 4.30622 9.83481 5.41746 11 5.82929V8H8C7.44772 8 7 8.44772 7 9C7 9.55228 7.44772 10 8 10H11V20.9381C7.57272 20.5107 4.81871 17.9154 4.15356 14.5678L5.29289 15.7071C5.68342 16.0976 6.31658 16.0976 6.70711 15.7071C7.09763 15.3166 7.09763 14.6834 6.70711 14.2929L3.70711 11.2929C3.42111 11.0069 2.99099 10.9213 2.61732 11.0761C2.24364 11.2309 2 11.5955 2 12V13C2 18.5228 6.47715 23 12 23C17.5228 23 22 18.5228 22 13V12C22 11.5955 21.7564 11.2309 21.3827 11.0761C21.009 10.9213 20.5789 11.0069 20.2929 11.2929L17.2929 14.2929C16.9024 14.6834 16.9024 15.3166 17.2929 15.7071C17.6834 16.0976 18.3166 16.0976 18.7071 15.7071L19.8464 14.5678C19.1813 17.9154 16.4273 20.5107 13 20.9381V10H16C16.5523 10 17 9.55228 17 9C17 8.44772 16.5523 8 16 8H13V5.82929Z"
+          fill="none"  stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"  style="visibility: hidden;"></path>
+      </g>
+    </svg>
+  </div>
+
+
+  <div class="parallax-parent" id="scroll">
+    <div class="background-colors"></div>
+
+    <section class="parallax-child-container">
+      <div class="parallax-child">
+        <img src="images/the-ocean-waves-isolated-on-transparent-background-free-png.webp">
+      </div>
+    </section>
+
+    <section class="parallax-child-container">
+      <div class="parallax-child">
+        <img src="images/the-ocean-waves-isolated-on-transparent-background-free-png.webp">
+      </div>
+    </section>
+
+    <section class="parallax-child-container">
+      <div class="parallax-child">
+        <img src="images/the-ocean-waves-isolated-on-transparent-background-free-png.webp">
+      </div>
+    </section>
+
+    <section class="parallax-child-container">
+      <div class="parallax-child">
+        <img src="images/the-ocean-waves-isolated-on-transparent-background-free-png.webp">
+      </div>
+    </section>
+
+
+    <section class="parallax-child-container" style="top: 400%;">
+      <div class="parallax-child">
+        <img src="images/the-ocean-waves-isolated-on-transparent-background-free-png.webp">
+      </div>
+    </section>
+    <section class="parallax-child-container" style="top: 500%;">
+      <div class="parallax-child">
+        <img src="images/the-ocean-waves-isolated-on-transparent-background-free-png.webp">
+      </div>
+    </section>
+    <section class="parallax-child-container" style="top: 600%;">
+      <div class="parallax-child">
+        <img src="images/the-ocean-waves-isolated-on-transparent-background-free-png.webp">
+      </div>
+    </section>
+
+    <section class="parallax-child-container" style="top: 700%;">
+      <div class="parallax-child">
+        <img src="images/the-ocean-waves-isolated-on-transparent-background-free-png.webp">
+      </div>
+    </section>
+    <section class="parallax-child-container" style="top: 800%;">
+      <div class="parallax-child">
+        <img src="images/the-ocean-waves-isolated-on-transparent-background-free-png.webp">
+      </div>
+    </section>
+    <section class="parallax-child-container" style="top: 900%;">
+      <div class="parallax-child">
+        <img src="images/the-ocean-waves-isolated-on-transparent-background-free-png.webp">
+      </div>
+    </section>
+
+    <section class="parallax-child-container" style="top: 1000%;">
+      <div class="parallax-child">
+        <img src="images/the-ocean-waves-isolated-on-transparent-background-free-png.webp">
+      </div>
+    </section>
+    <section class="parallax-child-container" style="top: 1100%;">
+      <div class="parallax-child">
+        <img src="images/the-ocean-waves-isolated-on-transparent-background-free-png.webp">
+      </div>
+    </section>
+
+    <section class="parallax-child-container" style="top: 1200%;">
+      <div class="parallax-child">
+        <img src="images/the-ocean-waves-isolated-on-transparent-background-free-png.webp">
+      </div>
+    </section>
+
+    <section class="parallax-child-container" style="top: 1300%;">
+      <div class="parallax-child">
+        <img src="images/the-ocean-waves-isolated-on-transparent-background-free-png.webp">
+      </div>
+    </section>
+
+    <section class="parallax-child-container" style="top: 1400%;">
+      <div class="parallax-child">
+        <img src="images/the-ocean-waves-isolated-on-transparent-background-free-png.webp">
+      </div>
+    </section>
+
+    <section class="parallax-child-container" style="top: 1500%;">
+      <div class="parallax-child">
+        <img src="images/the-ocean-waves-isolated-on-transparent-background-free-png.webp">
+      </div>
+    </section>
+
+    <section class="parallax-child-container" style="top: 1600%;">
+      <div class="parallax-child">
+        <img src="images/the-ocean-waves-isolated-on-transparent-background-free-png.webp">
+      </div>
+    </section>
+
+    <section class="parallax-child-container" style="top: 1616%;">
+      <div class="parallax-child">
+        <img src="images/the-ocean-waves-isolated-on-transparent-background-free-png.webp">
+      </div>
+    </section>
+
+
+
+
+    <div class="parallax-background">
+      <img src="images/the-ocean-waves-isolated-on-transparent-background-free-png.webp">
+    </div>
+
+    <div class="parallax-background" style="top: 500%;">
+      <img src="images/the-ocean-waves-isolated-on-transparent-background-free-png.webp">
+    </div>
+    <div class="parallax-background" style="top: 1000%;">
+      <img src="images/the-ocean-waves-isolated-on-transparent-background-free-png.webp">
+    </div>
+    <div class="parallax-background" style="top: 1500%;">
+      <img src="images/the-ocean-waves-isolated-on-transparent-background-free-png.webp">
+    </div>
+
+
+    <div class="parallax-background2">
+      <img src="images/972baf30be0a1e7ab221dd20344afc0b.png">
+    </div>
+    <div class="parallax-background2" style="top: 890%; ">
+      <img src="images/972baf30be0a1e7ab221dd20344afc0b(1).png">
+    </div>
+
+    <div class="parallax-background2" style="top: 1690%;">
+      <img src="images/972baf30be0a1e7ab221dd20344afc0b.png">
+    </div>
+
+    <div id="particles-js" style="width: 10%; height: 2000%; transform: translateY(-25%); margin-left: 22%;"></div>
+    <div class="parallax-boat">
+      <img src="images/80aa69dfe878921b2a5cdb92914ef5a5.png" class="products">
+    </div>
+
+    <div class="parallax-boat" style="top: 899%;">
+      <img src="images/80aa69dfe878921b2a5cdb92914ef5a5.png" class="menu">
+    </div>
+
+    <div class="parallax-cloud">
+      <img src="images/605a08bb26b8f9be24407fba_Cloud_3.png">
+    </div>
+    <div class="parallax-cloud" style="top: 200%;">
+      <img src="images/605a08bb26b8f9be24407fba_Cloud_3.png">
+    </div>
+    <div class="parallax-cloud" style="top: 400%;">
+      <img src="images/605a08bb26b8f9be24407fba_Cloud_3.png">
+    </div>
+    <div class="parallax-cloud" style="top: 600%;">
+      <img src="images/605a08bb26b8f9be24407fba_Cloud_3.png">
+    </div>
+    <div class="parallax-cloud" style="top: 800%;">
+      <img src="images/605a08bb26b8f9be24407fba_Cloud_3.png">
+    </div>
+    <div class="parallax-cloud" style="top: 1000%;">
+      <img src="images/605a08bb26b8f9be24407fba_Cloud_3.png">
+    </div>
+
+  </div>
+
+</main>
+
+<!-- producsts -->
+
+<section class="shop_section layout_padding products-menu">
+  <div class="container">
+    <div class="heading_container heading_center">
+      <h2>
+        Latest Products
+      </h2>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="box">
+          <a href="">
+            <div class="img-box">
+              <img src="images/4ad6d40ee572867d05b9f1ac93ff3d39.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                HotDog Cog
+              </h6>
+              <h6>
+                Price
+                <span>
+                  $2000
+                </span>
+              </h6>
+            </div>
+            <div class="new">
+              <span>
+                New
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="box">
+          <a href="">
+            <div class="img-box">
+              <img src="images/PBO278.news_main.big_c_seatrial-630x354.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Large catamaran
+              </h6>
+              <h6>
+                Price
+                <span>
+                  $37000
+                </span>
+              </h6>
+            </div>
+            <div class="new">
+              <span>
+                New
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="box">
+          <a href="">
+            <div class="img-box">
+              <img src="images/boat.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Small Brigantine
+              </h6>
+              <h6>
+                Price
+                <span>
+                  $10
+                </span>
+              </h6>
+            </div>
+            <div class="new">
+              <span>
+                New
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="box">
+          <a href="">
+            <div class="img-box">
+              <img src="images/4ad6d40ee572867d05b9f1ac93ff3d39.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Flower Bouquet
+              </h6>
+              <h6>
+                Price
+                <span>
+                  $45
+                </span>
+              </h6>
+            </div>
+            <div class="new">
+              <span>
+                New
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="box">
+          <a href="">
+            <div class="img-box">
+              <img src="images/4ad6d40ee572867d05b9f1ac93ff3d39.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Teddy Bear
+              </h6>
+              <h6>
+                Price
+                <span>
+                  $95
+                </span>
+              </h6>
+            </div>
+            <div class="new">
+              <span>
+                New
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="box">
+          <a href="">
+            <div class="img-box">
+              <img src="images/4ad6d40ee572867d05b9f1ac93ff3d39.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Flower Bouquet
+              </h6>
+              <h6>
+                Price
+                <span>
+                  $70
+                </span>
+              </h6>
+            </div>
+            <div class="new">
+              <span>
+                New
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="box">
+          <a href="">
+            <div class="img-box">
+              <img src="images/4ad6d40ee572867d05b9f1ac93ff3d39.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Watch
+              </h6>
+              <h6>
+                Price
+                <span>
+                  $400
+                </span>
+              </h6>
+            </div>
+            <div class="new">
+              <span>
+                New
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="box">
+          <a href="">
+            <div class="img-box">
+              <img src="images/4ad6d40ee572867d05b9f1ac93ff3d39.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Ring
+              </h6>
+              <h6>
+                Price
+                <span>
+                  $450
+                </span>
+              </h6>
+            </div>
+            <div class="new">
+              <span>
+                New
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="btn-box">
+      <a href="">
+        View All Products
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- form -->
+
+<form class="form">
+  <p class="title">Register </p>
+  <p class="message">Signup now an' get full access to our app. </p>
+  <div class="flex">
+    <label>
+      <input required="" placeholder="" type="text" class="input">
+      <span>Firstname</span>
+    </label>
+
+    <label>
+      <input required="" placeholder="" type="text" class="input">
+      <span>Lastname</span>
+    </label>
+  </div>
+
+  <label>
+    <input required="" placeholder="" type="email" class="input">
+    <span>Email</span>
+  </label>
+
+  <label>
+    <input required="" placeholder="" type="password" class="input">
+    <span>Password</span>
+  </label>
+  <label>
+    <input required="" placeholder="" type="password" class="input">
+    <span>Confirm password</span>
+  </label>
+  <button class="submit">Submit</button>
+  <p class="signin">Already 'ave an acount pirate? <a href="#">Board in !</a> </p>
+</form>
+
+<!-- scripts -->
+<script src="particles.js"></script>
+<script src="js\app.js"></script>
+
+<!-- stats.js -->
+<script src="js\lib\stats.js"></script>
+
+
+
+
+<script>
+  const maxscroll = 19000;
+  const scroll = document.querySelector("#scroll");
+  scroll.addEventListener("scroll", event => {
+    if (scroll.scrollTop > maxscroll) {
+      scroll.scrollTop = maxscroll;
+    }
+  }, { passive: true });
+
+</script>
+<script src="node_modules\animejs\lib\anime.min.js">
+</script>
+<script type="application/javascript">
+  var clouds = document.querySelectorAll('.parallax-cloud');
+  var boats = document.querySelectorAll('.parallax-boat');
+  anime({
+    targets: clouds,
+    translateY: [
+      { value: ['-30%', '-50%'], duration: 10000, delay: 1 }
+    ],
+    translateX: [
+      { value: ['-70%', '-80%'], duration: 6000, delay: 100 }
+    ],
+    translateZ: [
+      { value: 0, duration: 0, delay: 0 }
+    ],
+    scale: [
+      { value: ['1.5', '1.38'], duration: 10000, delay: 1 }
+    ],
+    rotate: [
+      { value: 90, duration: 0, delay: 0 }
+    ],
+    loop: true,
+    easing: 'cubicBezier(0.420, 0.000, 0.580, 1.000)',
+    direction: 'alternate'
+  });
+
+  anime({
+    targets: boats,
+    translateY: [
+      { value: ['-60%', '-50%'], duration: 4000, delay: 1 }
+    ],
+    translateX: [
+      { value: ['-75%', '-70%'], duration: 6000, delay: 100 }
+    ],
+    translateZ: [
+      { value: '-20px', duration: 0, delay: 0 }
+    ],
+    scale: [
+      { value: ['2.5', '2.38'], duration: 5000, delay: 1 }
+    ],
+    rotate: [
+      { value: 90, duration: 0, delay: 0 }
+    ],
+    loop: true,
+    direction: 'alternate',
+    easing: 'cubicBezier(0.420, 0.000, 0.580, 1.000)'
+  });
+</script>
+<script type="application/javascript">
+    let timeLine = anime.timeline({loop: true,direction: 'alternate', autoplay: false});
+
+
+  var animation = anime({
+    targets: '.form',
+    translateY: '-100%',
+    autoplay: false,
+    easing: 'easeInOutSine'
+  });
+
+  var animation2 = anime({
+    targets: '.shop_section',
+    translateY: '-100%',
+    autoplay: false,
+    delay: 10000,
+    complete: timeLine.pause,
+    begin: timeLine.play,
+    easing: 'easeInOutSine'
+  });
+  animation2.finished.then(function() {
+    document.querySelector('.loader').style.visibility = 'hidden';
+    document.querySelector('#boat').style.visibility = 'hidden';
+    document.querySelector('#wave').style.visibility = 'hidden';
+    document.querySelector('#wave-2').style.visibility = 'hidden';
+    document.querySelector('#wave-3').style.visibility = 'hidden';
+    document.querySelector('#anchor').style.visibility = 'hidden';
+});
+timeLine.add({
+  targets: '#boat',
+  keyframes: [
+  {strokeDashoffset: [anime.setDashoffset, 0]},
+  {strokeDashoffset: [0, anime.setDashoffset]}
+  ],
+  begin: function() {
+    document.querySelector('.loader').style.visibility = 'visible';
+  },
+  easing: 'linear',
+  duration: 1500,
+  delay: function(el, i) { return i * 250 },
+}).add({
+  targets: '#wave',
+  keyframes: [
+  {strokeDashoffset: [anime.setDashoffset, 0]},
+  {strokeDashoffset: [0, anime.setDashoffset]}
+  ],
+  easing: 'linear',
+  duration: 1500,
+  delay: function(el, i) { return i * 250 },
+  begin: function() {
+    document.querySelector('#wave').style.visibility = 'visible';
+  },
+}).add({
+  targets: '#wave-2',
+  keyframes: [
+  {strokeDashoffset: [anime.setDashoffset, 0]},
+  {strokeDashoffset: [0, anime.setDashoffset]}
+  ],
+  easing: 'linear',
+  duration: 1500,
+  delay: function(el, i) { return i * 250 },
+  begin: function() {
+    document.querySelector('#wave-2').style.visibility = 'visible';
+  },
+}).add({
+  targets: '#wave-3',
+  keyframes: [
+  {strokeDashoffset: [anime.setDashoffset, 0]},
+  {strokeDashoffset: [0, anime.setDashoffset]}
+  ],
+  easing: 'linear',
+  duration: 1500,
+  delay: function(el, i) { return i * 250 },
+  begin: function() {
+    document.querySelector('#wave-3').style.visibility = 'visible';
+  },
+}).add({
+  targets: '#anchor',
+  keyframes: [
+  {strokeDashoffset: [anime.setDashoffset, 0]},
+  {strokeDashoffset: [0, anime.setDashoffset]}
+  ],
+  easing: 'linear',
+  duration: 1500,
+  delay: function(el, i) { return i * 250 },
+  begin: function() {
+    document.querySelector('#anchor').style.visibility = 'visible';
+  },
+});
+
+  document.querySelector('.menu').onclick = animation.play;
+  document.querySelector('.menu2').onclick = animation.play;
+  document.querySelector('.products').onclick = animation2.play
+  document.querySelector('.products2').onclick = animation2.play
+  document.querySelector('.products3').onclick = animation2.play
+</script>
+<script src="
+https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js
+"></script>
+
+
+
+</body>
+
+</html>

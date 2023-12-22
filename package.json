@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "animejs": "^3.2.2",
     "locomotive-scroll": "^4.1.4"
   }
 }
