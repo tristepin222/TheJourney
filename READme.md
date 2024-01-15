@@ -33,8 +33,10 @@ Avec Translation en Z, et scale
       top: 50%;
       left: 50%;
 
-      -webkit-transform: translateX(-60%) translateY(-140%) translateZ(-8px) scale(4.   5) rotate(90deg);
-      transform: translateX(-60%) translateY(-140%) translateZ(-14px) scale(4.5)    rotate(90deg);
+      -webkit-transform: translateX(-60%) translateY(-140%) translateZ(-8px) scale(4.5)
+      rotate(90deg);
+      transform: translateX(-60%) translateY(-140%) translateZ(-14px) scale(4.5)
+      rotate(90deg);
       z-index: -2;
     }
 
